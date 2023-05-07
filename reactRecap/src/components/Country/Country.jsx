@@ -4,10 +4,10 @@ const Country = (props) => {
     const {area, population, name, flags, region} = props.country;
     return (
         <div className='country'>
-            <h1>{name.common}</h1>
+            <h2>{name.common}</h2>
             <img src={flags.png} alt="" />
-            <h2>Region: {region}</h2>
-            <h3>Population: {population}</h3>
+            <h3>Region: {region}</h3>
+            <h4>Population: {population}</h4>
             <p>Area: <small>{area}</small></p>
         </div>
     );
